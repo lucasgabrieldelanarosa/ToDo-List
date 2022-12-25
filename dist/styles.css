@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+:root{
+    --bg-color-1:#00597c;
+    --bg-color-2:#326bac;
+    --bg-color-3:#93afce;
+    --bg-active-color: rgb(43, 165, 196);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 20vh;
+    background-color: var(--bg-color-1);
+    font-family: 'Rubik Gemstones', cursive;
+    gap: 1%;
+}
+header img{
+    width: 7vw;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-height: 100%;
+    background-color: var(--bg-color-2);
+}
+
+nav h1{
+    font-size: 1.5rem;
+}
+
+nav .nav-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 1% 10%;
+    gap: 5%;
+    margin: 1%;
+}
+nav .nav-btn:hover{
+    cursor: pointer;
+    background-color: var(--bg-active-color);
+}
+
+nav .active{
+    background-color: var(--bg-active-color);
+}
+
+nav button img{
+    height: 2vw;
+    width: 2vw;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main{
+    width: 70%;
+    min-height: 100%;
+    background-color: var(--bg-color-3);
+    padding: 2% 5%;
+}
+main h1{
+    font-size: 2rem;
+}
+.task{
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    margin: 1%;
+    gap: 1%;
+    font-size: 1.3rem;
+}
+.task img{
+    width: 3vw;
+}
+.completed-task p{
+    text-decoration: line-through;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--bg-color-1);
+    font-size: 1.5rem;
+    gap: 1%;
+}
+footer img{
+    width: 3vw;
+}
+footer img:hover{
+    filter: invert(10%);
+}
