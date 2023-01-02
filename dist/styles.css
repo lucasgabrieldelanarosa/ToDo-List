@@ -43,13 +43,13 @@ nav{
     align-items: center;
     width: 30%;
     min-height: 100%;
+    padding-top: 1%;
     background-color: var(--bg-color-2);
 }
 
 nav h1{
     font-size: 1.5rem;
 }
-
 nav .nav-btn{
     background-color: transparent;
     border: none;
@@ -57,7 +57,7 @@ nav .nav-btn{
     width: 70%;
     display: flex;
     align-items: center;
-    padding: 1% 10%;
+    padding: 1%;
     gap: 5%;
     margin: 1%;
 }
@@ -70,17 +70,44 @@ nav .active{
     background-color: var(--bg-active-color);
 }
 
+.project-input-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.project-input-div input{
+    width: 80%;
+    font-size: 1.1rem;
+}
+.project-input-div div{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.project-input-div div button{
+    font-size: 1rem;
+}
+
 nav button img{
     height: 2vw;
     width: 2vw;
 }
 
+.project-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .projects-container{
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
-
 main{
     width: 70%;
     min-height: 100%;
