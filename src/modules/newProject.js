@@ -1,4 +1,4 @@
-import { Project } from "./classes";
+import { Project, createProjectArray } from "./classes";
 import { pushProjectToProjectList } from "./arrraysPushs";
 import { loadProjectList } from "./loadProjectList";
 import { pushProjectToLocalStorage } from "./localStorage";
@@ -6,12 +6,17 @@ import { pushProjectToLocalStorage } from "./localStorage";
 export const saveBtnFunction = function(){    
 
     const newProjectInput = document.querySelector("#newProjectInput");
+
+    if(newProjectInput.value == ''){
+        alert('Project Name can not be empty')
+    }
     const projectName = newProjectInput.value;
 
     let newProject = new Project(projectName)
     pushProjectToProjectList(newProject)
     pushProjectToLocalStorage(newProject)
-    loadProjectList(newProject)
+    createProjectArray(newProject)
+    loadProjectList()
     createNewProjectButton()
 }
 

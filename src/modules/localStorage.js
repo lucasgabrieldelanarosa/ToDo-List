@@ -1,4 +1,4 @@
-import { projectList, localStorageProjectList } from ".."
+import { projectList } from ".."
 
 export const updateLocalStorage = function(){
     localStorage.setItem('projectList', JSON.stringify(projectList))
@@ -6,6 +6,5 @@ export const updateLocalStorage = function(){
 
 export const pushProjectToLocalStorage = function (newProject) {
     projectList.push(newProject)
-    console.log(projectList)
     updateLocalStorage()
 }

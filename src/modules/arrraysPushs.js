@@ -1,4 +1,4 @@
-import { projectList, Project, Task } from "./classes";
+import { projectList} from "./classes";
 
 export const pushProjectToProjectList = function(Project){
     projectList.push(Project)

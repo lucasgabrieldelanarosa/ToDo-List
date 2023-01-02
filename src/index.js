@@ -11,6 +11,5 @@ createNewProjectBtn.addEventListener('click', function(){
 export const localStorageProjectList = JSON.parse(localStorage.getItem('projectList'))
 export let projectList = localStorage.getItem('projectList') !== null ? localStorageProjectList : []
 
-
 loadProjectList()
 btnColorFunction()
